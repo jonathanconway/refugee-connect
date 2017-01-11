@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <a class="header__link header__settings a11y-text notbuilt" href="settings.html" title="Settings">Settings</a>
+            <h1>Refugee Connect</h1>
+            <a class="header__link header__nearme header__link--right" href="nearme.html" title="Find a resource nearby">Find a resource nearby</a>
+        </header>
+
+        <div class="card" ng-class="{ 'card--open': rcOpenHealth }">
+            <div class="card__heading" ng-init="rcOpenHealth = true">
+                <button class="card__toggle" ng-click="rcOpenHealth = !rcOpenHealth">
+                    <span ng-show="rcOpenHealth">–</span>
+                    <span ng-hide="rcOpenHealth">+</span>
+                    <span class="a11y-context">Close</span>
+                </button>
+                <h2 class="card__title">Health</h2>
+            </div>
+            <div ng-show="rcOpenHealth">
+                <a class="carditem" ng-href="resourceprofile_redcross.html">
+                    <img class="carditem__logo" ng-src="../images/rcCardItem__RedCross.png" alt="Red Cross Logo">
+                    <div class="carditem__body">
+                        <span class="carditem__heading">
+                            <h3 class="carditem__title">Red Cross</h3>
+                        </span>
+                        
+                        <span class="starrating carditem__starrating">
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star">*</b>
+                            <b class="starrating__star">*</b>
+                        </span>
+
+                        <span class="distance carditem__distance">
+                            <label class="a11y-context">Distance:</label> 
+                            5km
+                        </span>
+
+                        <span class="comments carditem__comments a" href="#">
+                            5 comments
+                        </span>
+                    </div>
+                </a>
+                <a class="carditem" ng-href="profile_RefugeeAid.html">
+                    <img class="carditem__logo" ng-src="../images/rcCardItem__RefugeeAid.png" alt="Refugee Aid Logo">
+                    <div class="carditem__body">
+                        <span class="carditem__heading">
+                            <h3 class="carditem__title">Refugee Aid</h3>
+                        </span>
+                        
+                        <span class="starrating carditem__starrating">
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star starrating__star--filled">*</b>
+                            <b class="starrating__star">*</b>
+                        </span>
+
+                        <span class="distance carditem__distance">
+                            <label class="a11y-context">Distance:</label> 
+                            3km
+                        </span>
+
+                        <span class="comments carditem__comments a" href="#">
+                            2 comments
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

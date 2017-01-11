@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Omar Russ Profile</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app userprofile">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <a class="header__link header__back" href="resourceprofile_redcross.html" title="Back to Red Cross Profile">Back to Red Cross Profile</a>
+            <h1>View Profile</h1>
+            <a class="header__link header__addasfriend header__link--right" href="userprofile_omar__addfriend.html" title="Add as Friend" ng-hide="userProfile.added">Add as Friend</a>
+        </header>
+
+        <div class="userprofile">
+            <div class="userprofile__header">
+                <img src="../images/UserProfile__omar.png" src="Photo of Omar Rus" class="userprofile__photo" />
+                <h2 class="userprofile__name">Omar Russ</h2>
+                <span class="userprofile__location">Sydney NSW</span>
+            </div>
+
+            <div class="userprofile__stats notbuilt">
+                <a href="#" class="userprofile__stat">
+                    <strong class="userprofile__stat__number">1446</strong>
+                    <label class="userprofile__stat__label">Comments</label>
+                </a>
+                <a href="#" class="userprofile__stat">
+                    <strong class="userprofile__stat__number">78</strong>
+                    <label class="userprofile__stat__label">Friends</label>
+                </a>
+            </div>
+
+            <div class="card userprofile__badges">
+                <div class="card__heading">
+                    <h3 class="card__title">Badges</h3>
+                </div>
+
+                <ul class="userprofile__badges__list notbuilt">
+                    <li class="userprofile__badge">
+                        <img class="userprofile__badge__image" src="../images/LegalBadge.svg" alt="Icon for legal badge - set of scales" />
+                        <div class="userprofile__badge__details">
+                            <h4 class="userprofile__badge__title">Top Legal Contributor</h4>
+                            <p class="userprofile__badge__description">Get over 200 likes in legal category</p>
+                        </div>
+                    </li>
+                    <li class="userprofile__badge">
+                        <img class="userprofile__badge__image" src="../images/HealthBadge.svg" alt="Icon for health badge - heart with cross in the middle" />
+                        <div class="userprofile__badge__details">
+                            <h4 class="userprofile__badge__title">Top Health Contributor</h4>
+                            <p class="userprofile__badge__description">Get over 200 likes in health category</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

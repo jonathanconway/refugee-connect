@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Red Cross Profile</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app profile">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <a class="header__link header__back a11y-text" href="index.html" title="Back to Home">Back to Home</a>
+            <h1>Health</h1>
+        </header>
+
+        <div class="card profile">
+            <div class="card__heading">
+                <h2 class="card__title">Red Cross</h2>
+            </div>
+
+            <div class="card__body">
+                <div>
+                    <img src="../images/rcProfile__RedCross.png" alt="Red Cross Logo" class="profile__image" /><!--
+                    --><div class="profile__details">
+                        <a href="http://maps.google.com/?q=123%20Regular%20St,%20Redfern,%202016" class="a profile__detail profile__address">123 Regular St, Redfern</a>
+                        <a href="tel:0298765432" class="a profile__detail profile__phone">(02) 9876 5432</a>
+                        <a href="mailto:info@redcross.org.au" class="a profile__detail profile__email">info@redcross.org.au</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="profile__blurb">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalesa pulvinunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    </div>
+                </div>
+
+                <div class="profile__ratings">
+                    <div class="profile__rating">
+                        <h3 class="profile__title">Average Rating</h3>
+
+                        <span class="starrating">
+                            <span class="profile__starrating__star starrating__star starrating__star--filled">*</span><!--
+                            --><span class="profile__starrating__star starrating__star starrating__star--filled">*</span><!--
+                            --><span class="profile__starrating__star starrating__star starrating__star--filled">*</span><!--
+                            --><span class="profile__starrating__star starrating__star">*</span><!--
+                            --><span class="profile__starrating__star starrating__star">*</span>
+                        </span>
+                    </div>
+                    <div class="profile__rating">
+                        <h3 class="profile__title">Your Rating</h3>
+                        <span class="starrating starrating__input">
+                            <label ng-repeat="i in [1,2,3,4,5]" ng-class="{ 'starrating__star--filled': i <= profile.starRating }" class="profile__starrating__star starrating__star" title="{{i}} star{{ (i === 0 && 's') || '' }}">
+                                <input type="radio" ng-value="{{i}}" ng-model="$parent.profile.starRating" />
+                            </label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="profile__comments">
+                    <h3 class="profile__title">Comments</h3>
+
+                    <ul class="profile__comments__list">
+                        <li class="profile__comment">
+                            <a href="userprofile_omar.html">
+                                <img class="profile__comment__photo" src="../images/rcProfile_commenter1.png" alt="Profile photo of Omar" />
+                            </a>
+                            <a class="profile__comment__details" href="userprofile_omar.html">
+                                <h4 class="profile__comment__person">Omar</h4>
+                                <span>
+                                    <img src="../images/HealthBadge.svg" alt="Icon for health badge - heart with cross in the middle" class="profile__comment__badge"></span>
+                                    <img src="../images/LegalBadge.svg" alt="Icon for legal badge - set of scales" class="profile__comment__badge"></span>
+                                </span>
+                                <span class="profile__comment__date">14/04/2016</span>
+                            </a>
+                            <div class="profile__comment__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalesa.
+                            </div>
+                            <div class="profile__comment__liking" ng-class="{'profile__comment__like--liked':profile.comments[0].liked}">
+                                <button class="profile__comment__like" ng-click="profile.comments[0].liked=true">{{profile.comments[0].liked ? 'Liked' : ' Like'}}</button>
+                                <span class="profile__comment__likes">23 likes</span>
+                            </div>
+                        </li>
+                        <li class="profile__comment">
+                            <img class="profile__comment__photo" src="../images/rcProfile_commenter2.png" alt="Profile photo of Nadia" />
+                            <div class="profile__comment__details">
+                                <h4 class="profile__comment__person">Nadia</h4>
+                                <span class="profile__comment__date">12/04/2016</span>
+                            </div>
+                            <div class="profile__comment__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodalesa.
+                            </div>
+                            <div class="profile__comment__liking" ng-class="{'profile__comment__like--liked':profile.comments[1].liked}">
+                                <button class="profile__comment__like" ng-click="profile.comments[1].liked=true">{{ profile.comments[1].liked ? 'Liked' : 'Like' }}</button>
+                                <span class="profile__comment__likes">79 likes</span>
+                            </div>
+                        </li>
+                        <li class="profile__comment" ng-show="profile.commentAdded">
+                            <img class="profile__comment__photo" src="../images/User.svg" alt="Profile photo of you" />
+                            <div class="profile__comment__details">
+                                <h4 class="profile__comment__person">You</h4>
+                                <span class="profile__comment__date">{{ currentDate | date: 'dd/MM/yyyy' }}</span>
+                            </div>
+                            <div class="profile__comment__content">
+                                {{profile.newComment}}
+                            </div>
+                            <div class="profile__comment__liking" ng-class="{'profile__comment__like--liked':profile.comments[2].liked}">
+                                <button class="profile__comment__like" ng-click="profile.comments[2].liked=true">{{ profile.comments[2].liked ? 'Liked' : 'Like' }}</button>
+                                <span class="profile__comment__likes">0 likes</span>
+                            </div>
+                        </li>                        
+                    </ul>
+
+                    <button class="button profile__button" ng-click="profile.showAddComment = true;" ng-hide="profile.showAddComment">Leave a comment</button>
+
+                    <div class="profile__addcomment" ng-show="profile.showAddComment">
+                        <textarea class="profile__addcomment__input" ng-model="profile.newComment"></textarea>
+                        <button class="button profile__button" type="submit" ng-click="profile.commentAdded=true;profile.showAddComment=false">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

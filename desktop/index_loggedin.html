@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1><a href="index.html">Refugee Connect</a></h1>
+
+            <nav>
+                <a class="header__link header__link--active" href="index.html">Home</a>
+                <a class="header__link" href="nearme.html">Near Me</a>
+                <a class="header__link" href="personal_profile.html">Personal Profile</a>
+                <a class="header__link" href="addcard.html">+ Add Cards</a>
+                <a class="header__link" href="index.html">Log Out</a>
+            </nav>
+        </header>
+
+        <div class="pane home__pane">
+
+            <div class="card home__card card__legal" ng-show="home.addedCards.indexOf('legal') > -1">
+                <div class="card__heading">
+                    <h2 class="card__title">Legal</h2>
+                </div>
+                <div class="card__info">
+                    Need help defending your refugee claim
+                    in court? It is important to properly
+                    understand Australian law. Free legal
+                    counselling may be available in your area.
+                </div>
+                <div class="card__body">
+                    <a class="carditem" ng-href="resourceprofile_RedCross.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RedCross.png" alt="Red Cross Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Red Cross</h3>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                5km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                5 comments
+                            </span>
+                        </div>
+                    </a>
+                    <a class="carditem" ng-href="profile_RefugeeAid.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RefugeeAid.png" alt="Refugee Aid Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Refugee Aid</h3>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                3km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                2 comments
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card home__card card__health" ng-show="home.addedCards.indexOf('health') > -1">
+                <div class="card__heading">
+                    <h2 class="card__title">Health</h2>
+                </div>
+                <div class="card__info">
+                    Do you suffer from a medical condition or wish to prevent one from happening. Emergency and
+                    ongoing health resources are available to help you to improve your health or manage existing
+                    conditions.
+                </div>
+                <div class="card__body">
+                    <a class="carditem" ng-href="resourceprofile_RedCross.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RedCross.png" alt="Red Cross Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Red Cross</h3>
+                                <span class="carditem__location">Redfern</span>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                5km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                5 comments
+                            </span>
+                        </div>
+                    </a>
+                    <a class="carditem" ng-href="profile_RefugeeAid.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RefugeeAid.png" alt="Refugee Aid Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Refugee Aid</h3>
+                                <span class="carditem__location">King St, Sydney</span>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                3km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                2 comments
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card home__card card__religion" ng-show="home.addedCards.indexOf('religion') > -1">
+                <div class="card__heading">
+                    <h2 class="card__title">Religion</h2>
+                </div>
+                <div class="card__info">
+                    Connect to religious communities and institutions of relevance to your belief/faith.
+                </div>
+                <div class="card__body">
+                    <a class="carditem" ng-href="resourceprofile_PittStreet.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__PittStUnitingChurch.jpg" alt="Pitt Street Uniting Church Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Uniting Church</h3>
+                                <span class="carditem__location">Pitt Street, Sydney</span>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                5km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                5 comments
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="home__account home__pane">
+            <div class="home__account__profile">
+                <h2 class="home__account__title">My Profile</h2>
+                
+                <div class="home__account__as">
+                    <a class="a home__account__a" href="personal_profile.html">View</a>
+                    <a class="a home__account__a notbuilt" href="personal_profile.html#edit">Edit</a>
+                </div>
+
+                <span class="home__account__username">Jonathan Conway</span>
+                <span class="home__account__location">Sydney, Australia</span>
+                <img src="../images/ProfilePic.png" alt="Photo of Jonathan Conway" class="home__account__photo" />
+            </div>
+
+            <nav class="home__account__tabs notbuilt">
+                <a class="home__account__tab home__account__tab--active" href="#"><span>Friends</span></a>
+                <a class="home__account__tab" href="#">Favourites</a>
+                <a class="home__account__tab" href="#">Trending</a>
+            </nav>
+
+            <div class="home__account__friends notbuilt">
+                <div class="home__account__friend">
+                    <img class="home__account__friendphoto" src="../images/UserProfile__omar.png" alt="Profile Photo of Omar" />
+                    <div class="home__account__frienddetails">
+                        <span class="home__account__friendname">Omar Russ</span>
+                        <span class="home__account__friendlocation">Sydney, Australia</span>
+                    </div>
+                    <a class="a home__account__friendviewprofile" href="#">View Profile</a>
+                </div>
+                <div class="home__account__friend">
+                    <img class="home__account__friendphoto" src="../images/UserProfile__omar.png" alt="Profile Photo of Omar" />
+                    <div class="home__account__frienddetails">
+                        <span class="home__account__friendname">Omar Russ</span>
+                        <span class="home__account__friendlocation">Sydney, Australia</span>
+                    </div>
+                    <a class="a home__account__friendviewprofile" href="#">View Profile</a>
+                </div>
+                <div class="home__account__friend">
+                    <img class="home__account__friendphoto" src="../images/UserProfile__omar.png" alt="Profile Photo of Omar" />
+                    <div class="home__account__frienddetails">
+                        <span class="home__account__friendname">Omar Russ</span>
+                        <span class="home__account__friendlocation">Sydney, Australia</span>
+                    </div>
+                    <a class="a home__account__friendviewprofile" href="#">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="notbuilt">
+            Copyright © 2016, RefugeeConnect. 
+            <a class="a footer__a" href="#">Terms of Use</a> 
+            <a class="a footer__a" href="#">Privacy Policy</a> 
+            <a class="a footer__a" href="#">Contact Us</a>
+        </footer>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

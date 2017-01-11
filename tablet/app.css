@@ -1,0 +1,1130 @@
+/*
+ * A
+ */
+
+a {
+    text-decoration: none;
+}
+
+a * {
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: underline;
+    color: #335a47;
+}
+
+/*
+ * P
+ */
+
+p, span, label {
+    color: #4b637e
+}
+
+
+/*
+ * A11Y
+ */
+
+.a11y-context {
+    display: none;
+}
+
+.a11y-text {
+    text-indent: -10000em;
+}
+
+
+/*
+ * APP
+ */
+
+.app {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/*
+ * SIDEBAR
+ */
+
+.sidebar {
+    background-color: #415367;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar__title {
+    margin: 0.5em 0.5em 0.5em 1em;
+    color: white;
+    display: inline-block;
+    line-height: 0.7em;
+    width: 50%;
+}
+
+.sidebar__title__link {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+    width: 3em;
+}
+
+.sidebar__logo {
+    position: absolute;
+    top: 0em;
+    right: -7em;
+    height: 6em;
+    width: 6em;
+}
+
+.sidebar__account {
+    width: 3.4em;
+    height: 3.4em;
+    border: solid 1px white;
+    position: absolute;
+    right: 0.5em;
+    top: 0.9em;
+}
+
+.sidebar__account__messages {
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    position: absolute;
+    right: -0.4em;
+    top: -0.4em;
+    color: white;
+    text-align: center;
+    line-height: 1.1em;
+    border-radius: 100%;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+.sidebar__location {
+    background-image: url('../images/Sydney.png');
+    background-repeat: no-repeat;
+    background-size: 20em;
+    width: 100%;
+    height: 9em;
+}
+
+.sidebar__location__name {
+    color: white;
+    opacity: 0.7;
+    font-size: 0.7em;
+    background: url('../images/LocationMarker3.svg') no-repeat left center;
+    background-size: 1.2em;
+    padding-left: 1.5em;
+    padding-top: 0.3em;
+    height: 1.5em;
+    margin: 1em;
+    display: inline-block;
+}
+
+.sidebar__pageheading {
+    background-color: #eaeaea;
+    font-style: italic;
+    margin-left: 1em;
+    width: 16em;
+    display: inline-block;
+    padding: 0.2em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 0.9em;
+}
+
+.sidebar__links {
+    list-style: none none;
+    margin: 0 1em 1em 1em;
+    padding: 0;
+}
+
+.sidebar__link {
+    color: white;
+    padding: 1em 1em 0.5em 1em;
+    border-bottom: solid 1px white;
+    margin-bottom: 0.5em;
+    width: 100%;
+    display: inline-block;
+}
+
+.sidebar__link--active {
+    background-color: #eaeaea;
+    font-weight: bold;
+    font-style: italic;
+    color: #415367;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    width: 95%;
+}
+
+.sidebar__search {
+    margin: 1em;
+}
+
+.sidebar__search__input {
+    width: 10em;
+}
+
+
+/*
+ * BODY
+ */
+
+.body {
+    width: 1024px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*
+ * BODY
+ */
+
+.body {
+    width: 69%;
+    height: 34em;
+    overflow: hidden;
+    margin-top: 4em;
+}
+
+.body__title {
+    margin: 0.5em 0 0.5em 7em;
+    padding: 0;
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+}
+
+
+/*
+ * COMPANY
+ */
+
+.company {
+    border: solid 1px #efefef;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.company p {
+    margin: 0;
+    padding: 0;
+}
+
+.company__left,
+.company__centre,
+.company__right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.company__subtitle {
+    font-size: 1.1em;
+}
+
+.company__left {
+    margin-right: 0.5em;
+    width: 29%;
+    font-size: 0.9em;
+}
+
+    .company__title {
+        padding: 0 0 0 2em;
+        margin: 0 0 0.5em 0;
+        background: url('../images/HeartRed.svg') no-repeat left center;
+    }
+
+.company__centre {
+    margin-right: 0.5em;
+    width: 44%;
+}
+
+    .company__centre p {
+        font-size: 0.9em;
+    }
+
+    p.company__notes {
+        margin-top: 1em;
+        color: gray;
+        display: inline-block;
+    }
+
+.company__right {
+    background-color: #eaeaea;
+    padding: 0.5em;
+    width: 20%;
+}
+    
+    .company__cards__title {
+        margin: 0 0 0.5em 0;
+    }
+
+    .company__card {
+        display: inline-block;
+        margin-top: 0.5em;
+        width: 95%;
+        border-radius: 0.3em;
+        background-color: white;
+        padding: 0.2em;
+    }
+
+    .button.button__secondary.company__card__button {
+        height: 1.3em;
+        line-height: 1em;
+        font-size: 0.9em;
+        float: right;
+    }
+
+.company__ratingscommentsandmap {
+    border-top: solid 1px #efefef;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+}
+
+    .company__ratingscomments {
+        width: 53%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .company__rating {
+            display: inline-block;
+        }
+
+            .company__rating .company__subtitle {
+                width: 2.5em;
+                display: inline-block;
+                font-size: 1em;
+            }
+
+            .company__starrating {
+                vertical-align: top;
+                display: inline-block;
+                margin-top: 0.5em;
+                border-right: solid 3px #efefef;
+                padding-right: 1em;
+                margin-right: 0.5em;
+            }
+
+            .starrating__star.company__starrating__star {
+                width: 1.7em;
+                height: 1.7em;
+            }
+
+            .company__yourratingandcomments {
+                display: inline-block;
+            }
+
+                .starrating__star.company__yourrating__star {
+                    width: 1.3em;
+                    height: 1.3em;
+                }
+
+                .company__numberofcomments {
+                    display: block;
+                    color: #467a60;
+                    font-size: 0.9em;
+                    margin-top: 0.2em;
+                }
+
+        .company__comments {
+        }
+
+            .company__commentlist {
+                list-style: none none;
+                padding: 0;
+                margin: 0;
+                margin-top: 1em;
+            }
+
+            .company__comment {
+                margin-bottom: 0.5em;
+            }
+
+            .company__comment__photo {
+                width: 2.5em;
+                height: 2.5em;
+                display: inline-block;
+                vertical-align: top;
+                width: 10%;
+            }
+
+            .company__comment__details {
+                display: inline-block;
+                vertical-align: top;
+                width: 15%;
+            }
+
+            .company__comment__user {
+                font-size: 0.8em;
+            }
+
+            .company__comment__content {
+                display: inline-block;
+                vertical-align: top;
+                width: 52%;
+                font-size: 0.6em;
+            }
+
+            .company__comment__date {
+                font-size: 0.7em;
+                display: block;
+            }
+
+            .company__comment__liking {
+                display: inline-block;
+                box-sizing: border-box;
+                margin: 0;
+                vertical-align: top;
+            }
+
+                .company__comment__liking {
+                    border-left: solid 1px #e8e8e8;
+                    width: 15%;
+                    padding-left: 0.5em;
+                }
+
+                .company__comment__like {
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    background-size: 2.3em;
+                    background-color: white;
+                    width: 100%;
+                    border: none;
+                    height: 3.3em;
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                    cursor: pointer;
+                    margin: 0;
+                    border-bottom: solid 1px #e8e8e8;
+                    padding: 0;
+                    padding-top: 2em;
+                }
+                
+                .company__comment__like {
+                    background-image: url('../images/HeartRed_Gray.svg');
+                    color: grey;
+                }
+
+                .company__comment__like--liked .company__comment__like {
+                    background-image: url('../images/HeartRed.svg');
+                    color: #ec4c4c;
+                }    
+
+                .company__comment__likes {
+                    font-size: 0.7em;
+                    text-align: center;
+                    width: 100%;
+                    float: left;
+                    display: inline-block;
+                }
+
+                .company__comment__like--liked .company__comment__likes {
+                    color: gray;
+                }
+
+
+
+            .company__comments__textarea {
+                width: 95%;
+                font-size: 0.8em;
+            }
+
+            .button.company__comments__button {
+                float: right;
+            }
+
+
+    .company__location {
+        width: 43%;
+        float: right;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .company__map {
+            width: 100%;
+            margin-top: 0.5em;
+        }
+
+
+/*
+ * PERSONAL
+ */
+
+.personal {
+    border: solid 1px #efefef;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.personal__left {
+    display: inline-block;
+    width: 49%;
+}
+
+.personal__right.pane {
+    display: inline-block;
+    width: 48%;
+    float: right;
+    height: 24.7em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.personal__pane.pane {
+    margin-bottom: 0.5em;
+    padding: 1em;
+    position: relative;
+    height: 10em;
+}
+
+    .personal__editbutton {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+
+    .personal__pane__title {
+        margin: 0;
+        color: #415367;
+    }
+
+    .personal__details {
+        margin-top: 0;
+    }
+
+    .personal__detail {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+.profile__comment__badge {
+    height: 3em;
+    width: 3em;
+    margin-top: 1em;
+    margin-right: 0.5em;
+}
+
+.personal__profilephoto {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+    .personal__changephoto {
+        display: inline-block;
+        width: 100%;
+        color: #415367;
+    }
+
+
+/*
+ * PERSONAL
+ */
+
+.comments {
+    border: solid 1px #efefef;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.comments__title {
+    margin-top: 0;
+    color: #415367;
+}
+
+.comment.pane {
+    padding: 0.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.comment__level1 {
+    margin-left: 2em;
+}
+
+.comment__level2 {
+    margin-left: 4em;
+}
+
+.comment__title {
+    color: #415367;
+    margin: 0;
+}
+
+.comment__date {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+}
+
+a.comment__view {
+    color: #415367;
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    display: inline-block;
+}
+
+
+/*
+ * FOLLOWS
+ */
+
+.follows {
+    border: solid 1px #efefef;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+    .follows__title {
+        color: #415367;
+        margin: 0;
+    }
+
+    .follow__title {
+        color: #415367;
+        margin-top: 0;
+    }
+
+    .pane.follow {
+        padding: 0.5em;
+        margin: 0.5em;
+        position: relative;
+    }
+
+    a.follow__view {
+        color: #415367;
+        position: absolute;
+        right: 0.5em;
+        bottom: 0.5em;
+        display: inline-block;        
+    }
+
+
+/*
+ * SEARCH
+ */
+
+.search {
+    display: inline-block;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+.button.search__button {
+    height: 1.65em;
+    line-height: 1.5em;
+    vertical-align: top;
+}
+
+.search__button {
+}
+
+
+/*
+ * PANE
+ */
+
+.pane {
+    border-radius: 0.5em;
+    padding: 0.2em;
+    border: solid 1px #dcdedd;
+    background: linear-gradient(to bottom, #dcdedd 0%,#ececec 2%,#ececec 100%);
+}
+
+.pane__white {
+    background: white;
+}
+
+
+/*
+ * SECTION
+ */
+
+.section__title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #4b637e;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+}
+
+.subsection__title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #4b637e;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+}
+
+
+
+/*
+ * HOME
+ */
+
+.home {
+
+}
+
+    /* CARDS PANE */
+
+    .home__pane {
+        vertical-align: top;
+        display: inline-block;
+        margin: 0.5em 0 0.5em 0.5em;
+        width: 60%;
+        height: 28em;
+    }
+
+    .card.home__card {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em 0 0.5em 0.5em;
+    }
+
+    .card__heading {
+        color: white;
+        margin-top: -0.3em;
+        border-top-right-radius: 0.3em;
+        border-top-left-radius: 0.3em;
+        background-repeat: no-repeat;
+        background-position: 0.5em center;
+        background-size: 2em;
+    }
+
+
+    /* ACCOUNT PANE */
+
+    .home__account {
+        background-color: #cacfd5;
+        height: 30em;
+        width: 33%;
+        float: right;
+        padding: 1em;
+        margin-top: 0;
+        color: #3f5268;
+        position: fixed;
+        right: 0;
+    }
+
+        /* LINKS */
+
+        .home__account__as {
+            position: absolute;
+            left: 9em;
+            top: 1.4em;
+        }
+
+        .home__account__a {
+            color: #3f5268;
+            font-size: 0.8em;
+            margin-right: 0.5em;
+        }
+
+    .home__account__title {
+        font-size: 1.3em;
+        margin: 0.2em 0 0 0;
+    }
+
+    .home__account__text {
+    }
+
+    .home__account__field {
+        margin-top: 1em;
+    }
+
+    .home__account__textbox {
+        width: 95%;
+        margin-top: 0.3em;
+    }
+
+    .home__account__actions {
+        margin-top: 1em;
+    }
+
+    .home__account__actions .home__account__button:last-child {
+        float: right;
+    }
+
+    .home__account__profile {
+        height: 5em;
+    }
+
+    .home__account__pane {
+        position: relative;
+    }
+
+    .home__account__username {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0.6em;
+    }
+
+    .home__account__location {
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 100;
+    }
+
+    .home__account__photo {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        height: 5em;
+        width: 5em;
+    }
+
+        /* TABS */
+
+        .home__account__tabs {
+            width: 100%;
+            display: inline-block;
+            background-color: #e2e5e8;
+            margin: 1em -1em;
+            padding: 0.5em 1em;
+            border-top: solid 1px white;
+            border-bottom: solid 1px white;
+        }
+
+        .home__account__tab {
+            color: #3f5268;
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .home__account__tab--active span {
+            border-bottom: solid 5px #3f5268;
+            padding-bottom: 0.2em;
+            font-weight: 600;
+        }
+
+        /* FRIENDS */
+
+        .home__account__friend {
+            border-bottom: solid 1px white;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .home__account__friend:first-child {
+            padding-top: 0;
+        }
+
+        .home__account__friend:last-child {
+            border-bottom: none;
+        }
+
+        .home__account__friendphoto {
+            display: inline-block;
+            width: 3em;
+        }
+
+        .home__account__frienddetails {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 0.5em;
+            padding-top: 0.5em;
+            width: 50%;
+        }
+
+        .home__account__friendname {
+            font-size: 1em;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .home__account__friendlocation {
+            font-size: 0.8em;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .home__account__friendviewprofile {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 0.8em;
+            float: right;
+            line-height: 4em;
+            font-weight: 500;
+            color: #3f5268;
+        }
+
+
+/*
+ * FOOTER
+ */
+
+footer {
+    height: 3.5em;
+    background-color: #3f5268;
+    width: 100%;
+    display: block;
+    clear: left;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    line-height: 3.5em;
+}
+
+.footer__a {
+    color: white;
+    margin-left: 0.5em;
+}
+
+
+/*
+ * STAR RATING
+ */
+
+.starrating__star {
+    background: url('../images/rcStarRating__Star--Outline.svg') no-repeat center center;
+    text-indent: -10000em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    opacity: 0.3;
+}
+
+.starrating__star--filled {
+    background-image: url('../images/rcStarRating__Star.svg');
+}
+
+.starrating__input .starrating__star {
+    background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    opacity: 1;
+    cursor: pointer;
+}
+
+.starrating__input .starrating__star--filled {
+    background-image: url('../images/rcStarRating__GreenStar.svg');
+}
+
+    /* HOVER STATE */
+
+    .starrating__input:hover .starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar.svg');
+    }
+
+    .starrating__input:hover .starrating__star:hover~.starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    }
+
+
+/* 
+ * CREATE ACCOUNT
+ */
+
+.createaccount {
+    margin: 1em;
+    border: solid 1px silver;
+    padding: 0.5em;
+    height: 29.3em;
+}
+
+.createaccount__title {
+    color: #415367;
+    position: relative;
+    border-bottom: solid 1px #ff0000;
+    height: 0.5em;
+    margin: 1em 0;
+
+}
+
+.createaccount__title__text {
+    background: white;
+    padding-right: 0.5em;
+
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.2em;    
+}
+
+.createaccount__required {
+    padding-left: 0.5em;
+    background: white;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #ff0000;
+}
+
+.createaccount__field {
+    margin-bottom: 0.5em;
+}
+
+.createaccount__label {
+    width: 18%;
+    display: inline-block;
+}
+
+.createaccount__radiobutton.button.button__secondary {
+    height: 1.3em;
+    margin-right: 0.5em;
+}
+
+.createaccount__radiobutton input[type=radio] {
+    display: none;
+}
+
+.createaccount__genderother input[type=radio] {
+    display: none;
+}
+
+.createaccount__gendertextbox {
+    width: 2em;
+}
+
+.createaccount__left {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+.createaccount__right {
+    display: inline-block;
+    width: 25%;
+    float: right;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5em;
+}
+
+.createaccount__photo {
+    width: 5em;
+    height: 5em;
+    margin: 1em 0;
+}
+
+.createaccount__right__button {
+    width: 95%;
+    margin-top: 0.1em;
+}
+
+
+/*
+ * BREADCRUMBS
+ */
+
+.breadcrumbs {
+    margin: 0.5em 1em;
+}
+
+.breadcrumb {
+    text-decoration: none;
+    color: #3f5268;
+    font-size: 0.8em;
+}
+
+.breadcrumb:hover span {
+    text-decoration: underline;
+}
+
+
+
+
+/*
+ * BUTTON
+ */
+
+.button {
+    background-color: #467a60;
+    color: white;
+    height: 2em;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 0.3em;
+    border: solid 1px #335a47;
+    background: linear-gradient(to bottom, #67b08c 1%,#467a60 10%,#467a60 80%,#37624d 100%);
+    padding: 0 0.5em;
+}
+
+a.button {
+    line-height: 2em;
+}
+
+.button:active, .button.button--active {
+    background: linear-gradient(to top, #467a60 1%,#37624d 10%,#37624d 80%,#37624d 100%);
+    outline: none;
+}
+
+.button__secondary {
+    border: solid 1px #545454;
+    background: linear-gradient(to bottom, #9d9c9c 1%,#898989 10%,#727272 80%,#545454 100%);
+}
+
+.button.button__secondary:active, .button.button__secondary.button--active {
+    background: linear-gradient(to top, #898989 1%,#727272 10%,#727272 80%,#545454 100%);
+    outline: none;
+}
+
+
+/*
+ * TEXTAREA
+ */
+
+textarea {
+    border: solid 1px #d9d9d9;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    padding: 0.5em;
+    font-family: "Helvetica Neue";
+}
+
+
+/*
+ * TEXTBOX
+ */
+
+.textbox {
+    border: solid 1px #d9d9d9;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    padding: 0.5em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+
+/*
+ * NOTBUILT
+ */
+
+.notbuilt.notbuilt.notbuilt.notbuilt,
+.notbuilt.notbuilt.notbuilt.notbuilt * {
+    cursor: wait;
+}
+

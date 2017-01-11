@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="sidebar">
+            <h1 class="sidebar__title"><a class="sidebar__title__link" href="index.html">Refugee Connect</a></h1>
+
+            <img src="../images/Logo_v7_Inverted.svg" class="sidebar__logo" alt="Refugee Connect Logo" />
+
+            <span class="sidebar__account">
+                <img src="../images/ProfilePicTablet.png" alt="Photo of Sally Allam" />
+                <span class="sidebar__account__messages notbuilt">2</span>
+            </span>
+
+            <div class="sidebar__location">
+                <span class="sidebar__location__name">Sydney, AU</span>
+            </div>
+
+            <ul class="sidebar__links">
+                <li><a class="sidebar__link sidebar__link--active" href="personal.html">Personal Profile</a></li>
+                <li><a class="sidebar__link notbuilt" href="favourites.html">Favourites</a></li>
+                <li><a class="sidebar__link notbuilt" href="friends.html">Friends</a></li>
+                <li><a class="sidebar__link" href="follows.html">Follows</a></li>
+                <li><a class="sidebar__link notbuilt" href="recommendations.html">Recommends</a></li>
+                <li><a class="sidebar__link" href="comments.html">Comments</a></li>
+            </ul>
+
+            <form class="sidebar__search notbuilt">
+                <input type="text" class="sidebar__search__input" placeholder="Enter an interest">
+                <button>Add Interest</button>
+            </form>
+        </div>
+
+        <div class="body">
+            <div class="search notbuilt">
+                 <label class="search__label a11y-context">Search</label>
+                 <input type="text" class="search__input textbox">
+                 <button class="button search__button"><span style="display:inline-block;transform: rotate(-45deg);font-size:1.2em;color:white;">⚲</span> Search</button>
+            </div>
+
+            <h2 class="body__title">Personal</h2>
+
+            <div class="personal">
+                <h3 class="personal__title">Personal Information</h3>
+
+                <div class="personal__left">
+                    <div class="pane personal__pane">
+                        <button class="button button__secondary personal__editbutton notbuilt">Edit</button>
+
+                        <span class="personal__detail">
+                            <label class="personal__detail__label">Name:</label>
+                            <span class="personal__detail__value">Sally</span>
+                        </span>
+
+                        <span class="personal__detail">
+                            <label class="personal__detail__label">Surname:</label>
+                            <span class="personal__detail__value">Allam</span>
+                        </span>
+
+                        <span class="personal__detail">
+                            <label class="personal__detail__label">Gender:</label>
+                            <span class="personal__detail__value">Female</span>
+                        </span>
+
+                        <span class="personal__detail">
+                            <label class="personal__detail__label">Email:</label>
+                            <span class="personal__detail__value">cuie@gmial.com</span>
+                        </span>
+                    </div>
+
+                    <div class="pane personal__pane notbuilt">
+                        <h4 class="personal__pane__title">Messages:</h4>
+                    </div>
+                </div>
+
+                <div class="pane personal__right">
+                    <div class="personal__profilephoto notbuilt">
+                        <img class="personal__photo" src="../images/ProfilePicTablet2.png" alt="Photo of Sally Allam" />
+                        <a class="personal__changephoto" href="#">Change Photo</a>
+                    </div>
+
+                    <hr />
+
+                    <h4 class="personal__pane__title">Badges:</h4>
+
+                    <img src="../images/HealthBadge.svg" alt="Icon for health badge - heart with cross in the middle" class="profile__comment__badge"></span>
+                    <img src="../images/LegalBadge.svg" alt="Icon for legal badge - set of scales" class="profile__comment__badge"></span>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

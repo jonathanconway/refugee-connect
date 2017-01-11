@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Services Near Me</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1><a href="index.html">Refugee Connect</a></h1>
+
+            <nav>
+                <a class="header__link" href="index.html">Home</a>
+                <a class="header__link header__link--active" href="nearme.html">Near Me</a>
+                <a class="header__link" href="addcard.html">+ Add Cards</a>
+                <a class="header__link" href="createaccount.html">Create Account</a>
+            </nav>
+        </header>
+
+        <div class="breadcrumbs">
+            <a class="breadcrumb" href="index.html">◀ <span>Back to Home</span></a>
+        </div>
+
+        <div class="nearme">
+            <form class="notbuilt">
+                <label for="NearMePostcode">Post code:</label>
+                <input type="text" class="textbox nearme__postcode" id="NearMePostcode" placeholder="e.g. 2000" />
+                <button class="button button__secondary nearme__search"><span style="display:inline-block;transform: rotate(-45deg);font-size:1.2em;">⚲</span> Search</button>
+            </form>
+
+            <div class="nearme__results pane">
+                <div class="nearme__list card">
+                    <a class="carditem" ng-href="resourceprofile_legalaid.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RefugeeAid.png" alt="Refugee Aid Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Refugee Aid</h3>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                3km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                2 comments
+                            </span>
+                        </div>
+                    </a>
+                    <a class="carditem" ng-href="resourceprofile_legalaid.html">
+                        <img class="carditem__logo" ng-src="../images/rcCardItem__RedCross.png" alt="Red Cross Logo">
+                        <div class="carditem__body">
+                            <span class="carditem__heading">
+                                <h3 class="carditem__title">Red Cross</h3>
+                            </span>
+                            
+                            <span class="starrating carditem__starrating">
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star starrating__star--filled">*</b>
+                                <b class="starrating__star">*</b>
+                                <b class="starrating__star">*</b>
+                            </span>
+
+                            <span class="distance carditem__distance">
+                                <label class="a11y-context">Distance:</label> 
+                                5km
+                            </span>
+
+                            <span class="comments carditem__comments a" href="#">
+                                5 comments
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="nearme__map notbuilt"></div>
+            </div>
+        </div>
+
+        <footer class="notbuilt">
+            Copyright © 2016, RefugeeConnect. 
+            <a class="a footer__a" href="#">Terms of Use</a> 
+            <a class="a footer__a" href="#">Privacy Policy</a> 
+            <a class="a footer__a" href="#">Contact Us</a>
+        </footer>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1><a href="index.html">Refugee Connect</a></h1>
+
+            <nav>
+                <a class="header__link" href="index_loggedin.html">Home</a>
+                <a class="header__link" href="nearme.html">Near Me</a>
+                <a class="header__link header__link--active" href="personal_profile.html">Personal Profile</a>
+                <a class="header__link" href="addcard.html">+ Add Cards</a>
+                <a class="header__link notbuilt" href="index.html">Log Out</a>
+            </nav>
+        </header>
+
+        <div class="userprofile">
+            <div class="userprofile__header">
+                <h2 class="section__title">Jonathan's Personal Profile</h2>
+            </div>
+            <div class="userprofile__left">
+                <div class="userprofile__info pane pane__white userprofile__pane">
+                    <h3 class="subsection__title">Personal Information</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="userprofile__newfeeds pane pane__white userprofile__pane notbuilt">
+                    <h3 class="subsection__title">New Feeds</h3>
+                </div>
+                <div class="userprofile__comments pane pane__white userprofile__pane notbuilt">
+                    <h3 class="subsection__title">Comments</h3>
+                </div>
+            </div>
+            <div class="userprofile__right notbuilt">
+                <div class="userprofile__photo">
+                    <img src="../images/ProfilePic.png" alt="Photo of Jonathan Conway" class="userprofile__photo__pic" />
+
+                    <a href="#" class="a userprofile__changephoto">Change photo</a>
+                </div>
+                <div class="userprofile__friends pane pane__white notbuilt userprofile__pane">
+                    <h3 class="subsection__title">Friends</h3>
+
+                    <div class="userprofile__friend">
+                        <img class="userprofile__friendphoto" src="../images/UserProfile__omar.png" alt="Profile Photo of Omar" />
+                        <div class="userprofile__frienddetails">
+                            <span class="userprofile__friendname">Omar Russ</span>
+                            <span class="userprofile__friendlocation">Sydney, Australia</span>
+                        </div>
+                    </div>
+                    <div class="userprofile__friend">
+                        <img class="userprofile__friendphoto" src="../images/UserProfile__omar.png" alt="Profile Photo of Omar" />
+                        <div class="userprofile__frienddetails">
+                            <span class="userprofile__friendname">Omar Russ</span>
+                            <span class="userprofile__friendlocation">Sydney, Australia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="notbuilt">
+            Copyright © 2016, RefugeeConnect. 
+            <a class="a footer__a" href="#">Terms of Use</a> 
+            <a class="a footer__a" href="#">Privacy Policy</a> 
+            <a class="a footer__a" href="#">Contact Us</a>
+        </footer>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

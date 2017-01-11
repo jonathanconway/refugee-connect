@@ -1,0 +1,695 @@
+/*
+ * A
+ */
+
+a {
+    text-decoration: none;
+}
+
+a * {
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: underline;
+    color: #335a47;
+}
+
+
+/*
+ * A11Y
+ */
+
+.a11y-context {
+    display: none;
+}
+
+.a11y-text {
+    text-indent: -10000em;
+}
+
+
+/*
+ * APP
+ */
+
+.app {
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.app .login {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#485c73+0,485c73+50,415367+51,415367+100 */
+    background: #485c73; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #485c73 0%, #485c73 50%, #415367 51%, #415367 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #485c73 0%,#485c73 50%,#415367 51%,#415367 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #485c73 0%,#485c73 50%,#415367 51%,#415367 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485c73', endColorstr='#415367',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 50em;
+}
+
+
+/*
+ * HEADER
+ */
+
+header {
+    background-color: #3f5268;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    text-indent: 1em;
+    font-size: 1.4em;
+}
+
+header .header__link {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -10000em;
+}
+
+header .header__settings {
+    background-image: url('../images/rcHeader_Settings.svg');
+}
+
+header .header__back {
+    background-image: url('../images/rcHeader_Back.svg');
+}
+
+header .header__nearme {
+    background-image: url('../images/Nearby.svg');
+}
+
+header .header__link.header__link--right {
+    right: 1em;
+    left: inherit;
+}
+
+header .header__addasfriend {
+    background-image: url('../images/AddFriend.svg');
+}
+
+
+/*
+ * CARD
+ */
+
+.card {
+    border-radius: 0.5em;
+    margin: 0.5em;
+    background-color: #f7f7f7;
+    border: solid 1px #e2e2e2;
+    padding: 0.3em;
+}
+
+.card__heading {
+    border-bottom: none;
+    margin-left: -0.3em;
+    margin-right: -0.3em;
+    padding: 0 0.5em;
+}
+
+.card--open .card__heading {
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.card__body {
+    padding: 0.5em;
+}
+
+.card__toggle {
+    border: none;
+    background-color: transparent;
+    width: 0.5em;
+    height: 1.8em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 0.4em;
+    cursor: pointer;
+}
+
+.card__title {
+    margin: 0.5em 0;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+    /* CARD ITEM */
+
+    .carditem {
+        border-top: solid 1px #d9d9d9;
+        padding-top: 0.1em;
+        position: relative;
+        display: block;
+        text-decoration: none;
+    }
+
+    .carditem:first-child {
+        border-top: none;
+    }
+
+    .carditem:hover {
+        background-color: #efefef;
+    }
+
+    .carditem__logo {
+        width: 2.7em;
+        height: 2.7em;
+        display: inline-block;
+        float: left;
+        clear: left;
+        margin: 0.5em;
+    }
+
+    .carditem__body {
+        display: inline-block;
+        height: 3.6em;
+        margin-left: 0.5em;
+    }
+
+    .carditem__title {
+        margin: 0.3em 0 0 0;
+        font-size: 1.2em;
+        color: #444444;
+        text-decoration: underline;
+    }
+
+    .carditem__distance {
+        position: absolute;
+        top: 0.4em;
+        right: 0.1em;
+    }
+
+    .carditem__comments {
+        position: absolute;
+        bottom: 0.4em;
+        right: 0.1em;
+    }
+
+    .carditem__starrating {
+        position: absolute;
+        bottom: 0.4em;
+        left: 4.2em;
+    }
+
+
+/*
+ * STAR RATING
+ */
+
+.starrating__star {
+    background: url('../images/rcStarRating__Star--Outline.svg') no-repeat center center;
+    text-indent: -10000em;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    opacity: 0.3;
+}
+
+.starrating__star--filled {
+    background-image: url('../images/rcStarRating__Star.svg');
+}
+
+.starrating__input .starrating__star {
+    background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    opacity: 1;
+    cursor: pointer;
+}
+
+.starrating__input .starrating__star--filled {
+    background-image: url('../images/rcStarRating__GreenStar.svg');
+}
+
+    /* HOVER STATE */
+
+    .starrating__input:hover .starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar.svg');
+    }
+
+    .starrating__input:hover .starrating__star:hover~.starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    }
+
+
+/*
+ * DISTANCE
+ */
+
+.carditem .distance {
+    color: #00b1ea;
+    font-weight: bold;
+    background: url('../images/LocationMarker.svg') no-repeat left center;
+    padding-left: 1.2em;
+}
+
+
+/*
+ * COMMENTS
+ */
+
+.carditem .comments {
+}
+
+
+/*
+ * RESOURCE PROFILE
+ */
+
+.profile header {
+    background-color: #ec4c4c;
+}
+
+.profile__image,
+.profile__details {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.profile__image {
+    width: 30%;
+    margin-bottom: 0.5em;
+}
+
+.profile__details {
+    width: 70%;
+    padding: 0 0 0 1em;
+}
+
+.profile__detail {
+    background: url('../images/Box.svg') no-repeat left center;
+    padding-left: 1.4em;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.profile__address {
+    background-image: url('../images/LocationMarker2.svg');
+}
+
+.profile__phone {
+    background-image: url('../images/Telephone.svg');
+}
+
+.profile__email {
+    background-image: url('../images/Mail.svg');
+    background-size: 1.2em;
+}
+
+.profile__title {
+    margin-bottom: 0.5em;
+    margin-top: 0.8em;
+    font-size: 1em;
+}
+
+.profile__button {
+    width: 100%;
+}
+
+    /* RATINGS */
+
+    .profile__ratings {
+        border-top: solid 1px #d9d9d9;
+        border-bottom: solid 1px #d9d9d9;
+        padding-bottom: 1em;
+    }
+
+    .profile__rating {
+        width: 49%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .profile__starrating__star {
+        height: 1.4em;
+        width: 1.4em;
+    } 
+
+    /* COMMENTS */
+
+    .profile__comments__list {
+        list-style: none none;
+        padding: 0;
+    }
+
+    .profile__comment__photo,
+    .profile__comment__details,
+    .profile__comment__content,
+    .profile__comment__liking {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .profile__comment__photo {
+        width: 10%;
+    }
+
+    .profile__comment__details {
+        width: 15%;
+        overflow: hidden;
+        color: #0098cb;
+    }
+
+    .profile__comment__date {
+        font-size: 0.6em;
+    }
+
+    .profile__comment__content {
+        width: 50%;
+    }
+
+    .profile__comment__person {
+        margin: 0 0 0.3em 0;
+        font-size: 0.8em;
+    }
+
+    .profile__comment:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
+
+    .profile__comment__badge {
+        height: 1em;
+        width: 1em;
+    }
+
+    .profile__comment__liking {
+        border-left: solid 1px #e8e8e8;
+        width: 20%;
+        padding-left: 0.5em;
+    }
+    .profile__comment__like {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 2.3em;
+        background-color: white;
+        width: 100%;
+        border: none;
+        height: 3.3em;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        cursor: pointer;
+        margin: 0;
+        border-bottom: solid 1px #e8e8e8;
+        padding: 0;
+        padding-top: 2em;
+    }
+    
+    .profile__comment__like {
+        background-image: url('../images/HeartRed_Gray.svg');
+        color: grey;
+    }
+
+    .profile__comment__like--liked .profile__comment__like {
+        background-image: url('../images/HeartRed.svg');
+        color: #ec4c4c;
+    }    
+
+    .profile__comment__likes {
+        font-size: 0.7em;
+        text-align: center;
+        width: 100%;
+        float: left;
+        display: inline-block;
+    }
+
+    .profile__comment__like--liked .profile__comment__likes {
+        color: gray;
+    }
+    
+
+    /* ADD COMMENT */
+
+    .profile__addcomment__input,
+    .profile__addcomment__button {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .profile__addcomment__input {
+        // width: 70%;
+        width: 100%;
+        height: 6em;
+        display: inline-block;
+        margin-bottom: 0.5em;
+    }
+
+    .profile__addcomment__button {
+        // width: 29%;
+    }
+
+
+/*
+ * BADGE
+ */
+
+
+
+/*
+ * BUTTON
+ */
+
+.button {
+    background-color: #467a60;
+    color: white;
+    height: 2em;
+    font-size: 1.5em;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 0.3em;
+    border: solid 1px #335a47;
+    background: linear-gradient(to bottom, #67b08c 1%,#467a60 10%,#467a60 80%,#37624d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+/*
+ * TEXTAREA
+ */
+
+textarea {
+    border: solid 1px #d9d9d9;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    padding: 0.5em;
+    font-family: "Helvetica Neue";
+}
+
+
+/*
+ * USERPROFILE
+ */
+
+.userprofile__header {
+    text-align: center;
+    background-color: #3f5268;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.userprofile__photo {
+    margin-top: 1em;
+}
+
+.userprofile__name {
+    margin: 0.5em 0 0.2em 0;
+    font-weight: normal;
+}
+
+.userprofile__location {
+    font-weight: 100;
+}
+
+    /* STATS */
+
+    .userprofile__stats {
+        background-color: #7995b8;
+    }
+
+    .userprofile__stat {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        width: 48%;
+    }
+
+    .userprofile__stat:first-child {
+        background-color: #8ea1b9;
+        border-right: solid 1px white;
+        height: 4.5em;
+        padding-top: 0.4em;
+    }
+
+    .userprofile__stat__number {
+        font-weight: 300;
+        font-size: 2em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .userprofile__stat__label {
+        font-weight: 100;
+    }
+
+    .userprofile__stat,
+    .userprofile__stat * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* BADGES */
+
+    .userprofile__badges {
+
+    }
+
+    .userprofile__badge {
+        padding-bottom: 0.5em;
+    }
+
+    .userprofile__badge:not(:last-child) {
+        margin-bottom: 0.5em;
+        border-bottom: solid 1px #d9d9d9;
+    }
+
+    .userprofile__badges__list {
+        list-style: none none;
+        padding: 0;
+        margin: 0.5em;
+    }
+
+    .userprofile__badge__image,
+    .userprofile__badge__details {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .userprofile__badge__image {
+        width: 20%;
+        height: 4em;
+    }
+
+    .userprofile__badge__details {
+        margin-left: 0.5em;
+        width: 70%;
+    }
+
+    .userprofile__badge__title {
+        padding: 0;
+        margin: 0 0 0.5em 0;
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+
+    .userprofile__badge__description {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ADD FRIEND */
+
+    .userprofile__addfriend {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .userprofile__addfriend__message {
+        width: 88%;
+        height: 5em;
+    }
+
+    .userprofile__addfriend__button {
+        margin-top: 0.5em;
+        width: 95%;
+    }
+
+
+/*
+ * NEAR ME
+ */
+
+.nearme__map {
+    width: 97%;
+    margin: 0.5em;
+}
+
+.nearme__heading {
+    background-color: #e74c3c;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    position: relative;
+}
+
+.nearme__card {
+    padding-top: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.nearme__card__title {
+    font-size: 0.8em;
+    color: white;
+    padding-top: 0.1em;
+}
+
+.nearme__card__title label {
+    font-weight: 200;
+}
+
+.nearme__getlocation {
+    background: url('../images/FindLocation.svg') no-repeat center center;
+    border: none;
+    text-indent: -10000em;
+    width: 2.2em;
+    height: 2.2em;
+    right: 0.5em;
+    top: 0.2em;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/*
+ * NOTBUILT
+ */
+
+.notbuilt.notbuilt.notbuilt.notbuilt,
+.notbuilt.notbuilt.notbuilt.notbuilt * {
+    cursor: wait;
+}
+

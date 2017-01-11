@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="sidebar">
+            <h1 class="sidebar__title"><a class="sidebar__title__link" href="index.html">Refugee Connect</a></h1>
+
+            <img src="../images/Logo_v7_Inverted.svg" class="sidebar__logo" alt="Refugee Connect Logo" />
+
+            <span class="sidebar__account">
+                <img src="../images/ProfilePicTablet.png" alt="Photo of Sally Allam" />
+                <span class="sidebar__account__messages">2</span>
+            </span>
+
+            <div class="sidebar__location">
+                <span class="sidebar__location__name">Sydney, AU</span>
+            </div>
+
+            <ul class="sidebar__links">
+                <li><a class="sidebar__link" href="personal.html">Personal Profile</a></li>
+                <li><a class="sidebar__link notbuilt" href="favourites.html">Favourites</a></li>
+                <li><a class="sidebar__link notbuilt" href="friends.html">Friends</a></li>
+                <li><a class="sidebar__link" href="follows.html">Follows</a></li>
+                <li><a class="sidebar__link notbuilt" href="recommendations.html">Recommends</a></li>
+                <li><a class="sidebar__link" href="comments.html">Comments</a></li>
+            </ul>
+
+            <form class="sidebar__search notbuilt">
+                <input type="text" class="sidebar__search__input" placeholder="Enter an interest">
+                <button>Add Interest</button>
+            </form>
+        </div>
+
+        <div class="body">
+            <div class="search notbuilt">
+                 <label class="search__label a11y-context">Search</label>
+                 <input type="text" class="search__input textbox">
+                 <button class="button search__button"><span style="display:inline-block;transform: rotate(-45deg);font-size:1.2em;color:white;">⚲</span> Search</button>
+            </div>
+
+            <h2 class="body__title">Company Profile</h2>
+
+            <div class="company">
+                <h3 class="company__title">Red Cross Australia</h3>
+                
+                <div class="company__detailsandcards">
+                    <div class="company__left">
+                        <img src="../images/rcCardItem__RedCross.png" alt="Logo of Red Cross" />
+
+                        <p class="company__address">
+                            464 Kent St, Sydney NSW 2000
+                        </p>
+                        <p class="company__website">
+                            <a href="http://redcross.org.au">redcross.org.au</a>
+                        </p>
+                        <p class="company__phone">
+                            (02) 9876 5432
+                        </p>
+                        <p class="company__hours">
+                            Open now: 9am-5pm
+                        </p>
+                    </div>
+
+                    <div class="company__centre">
+                        <p class="company__description">dfasid ewioicn worefi coiszo triejodfv firo  ij i iasoi coir ijoreigjs ovkpv ojrdofijsodifj soiddfoijg soerijew4nr odjf eoirtj weoirjf[xozkv awpeot erotjosidfgjodsifjg woeirjerjtne rijdidfm ierjoioritjer
+                        dfasid ewioicn worefi coiszo triejodfv firo  ij i iasoi coir ijoreigjs ovkpv ojrdofijsodifj soiddfoijg soerijew4nr</p>
+
+                        <p class="company__notes">
+                            Notes: Jenny was the lady I see last time
+                        </p>
+                    </div>
+
+                    <div class="company__right company__cards notbuilt">
+                        <h4 class="company__cards__title">Cards</h4>
+
+                        <span class="company__card">Migrant</span>
+                        <span class="company__card">Health <button class="button button__secondary company__card__button">+ Add</button></span>
+                        <span class="company__card">Children <button class="button button__secondary company__card__button">+ Add</button></span>
+                    </div>
+                </div>
+
+                <div class="company__ratingscommentsandmap">
+                    <div class="company__ratingscomments">
+                        <div class="company__rating">
+                            <span class="company__subtitle">Your Rate</span>
+                            
+                            <span class="starrating company__starrating">
+                                <b ng-repeat="i in [1,2,3,4,5]" ng-class="{'starrating__star--filled': i < 4}" class="company__starrating__star starrating__star">*</b>
+                            </span>
+
+                            <span class="company__yourratingandcomments">
+                                <span class="starrating starrating__input">
+                                    <label ng-repeat="i in [1,2,3,4,5]" ng-class="{ 'starrating__star--filled': i <= profile.starRating }" class="company__yourrating__star starrating__star" title="{{i}} star{{ (i === 0 && 's') || '' }}">
+                                        <input type="radio" ng-value="{{i}}" ng-model="$parent.profile.starRating" />
+                                    </label>
+                                </span>
+
+                                <span class="company__numberofcomments">48 comments</span>
+                            </span>
+                        </div>
+
+                        <div class="company__comments">
+                            <ul class="company__commentlist">
+                                <li class="company__comment">
+                                    <img class="company__comment__photo" src="../images/User.svg" alt="Placeholder for Arj's profile photo" />
+                                    <span class="company__comment__details">
+                                        <span class="company__comment__user">Arj.</span>
+                                        <span class="company__comment__date">Apr, 2012</span>
+                                    </span>
+                                    <span class="company__comment__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    </span>
+                                    <span class="company__comment__liking" ng-class="{'company__comment__like--liked':company.comments[0].liked}">
+                                        <button class="company__comment__like" ng-click="company.comments[0].liked=true">{{company.comments[0].liked ? 'Liked' : ' Like'}}</button>
+                                        <span class="company__comment__likes">23 likes</span>
+                                    </span>
+                                </li>
+                                <li class="company__comment">
+                                    <img class="company__comment__photo" src="../images/User.svg" alt="Placeholder for Arj's profile photo" />
+                                    <span class="company__comment__details">
+                                        <span class="company__comment__user">Nwegj.</span>
+                                        <span class="company__comment__date">Jan, 2014</span>
+                                    </span>
+                                    <span class="company__comment__content">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                    <span class="company__comment__liking" ng-class="{'company__comment__like--liked':company.comments[1].liked}">
+                                        <button class="company__comment__like" ng-click="company.comments[1].liked=true">{{company.comments[1].liked ? 'Liked' : ' Like'}}</button>
+                                        <span class="company__comment__likes">23 likes</span>
+                                    </span>
+                                </li>
+                            </ul>
+
+                            <textarea class="textarea company__comments__textarea" placeholder="Write a comment"></textarea>
+                            <button class="button company__comments__button notbuilt">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="company__location notbuilt">
+                        <p>5km away from you</p>
+
+                        <img class="company__map" src="../images/Map.png" alt="Map of Sydney" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1397 @@
+/*
+ * A
+ */
+
+a {
+    text-decoration: none;
+}
+
+a * {
+    cursor: pointer;
+}
+
+.a {
+    text-decoration: underline;
+    color: #335a47;
+}
+
+/*
+ * P
+ */
+
+p, span, label {
+    color: #4b637e
+}
+
+
+/*
+ * A11Y
+ */
+
+.a11y-context {
+    display: none;
+}
+
+.a11y-text {
+    text-indent: -10000em;
+}
+
+
+/*
+ * APP
+ */
+
+.app {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/*
+ * HEADER
+ */
+
+header {
+    padding: 1.5em 1em;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    background: #3f5268 url('../images/Logo.svg') no-repeat 1em center;
+    background-size: 5em;
+}
+
+header h1 {
+    color: white;
+    padding: 0 0 0 3.5em;
+    margin: 0;
+    font-weight: 100;
+    text-indent: 1em;
+    font-size: 1.4em;
+}
+
+header h1 a {
+    color: white;
+}
+
+header nav {
+    right: 1.5em;
+    top: 0.5em;
+    position: absolute;
+    height: 3.6em;
+    line-height: 3.6em;
+}
+
+header .header__link {
+    cursor: pointer;
+    color: white;
+    margin-left: 1.5em;
+}
+
+header .header__link--active {
+    border-bottom: solid 0.3em white;
+    padding-bottom: 0.2em;
+}
+
+
+/*
+ * PANE
+ */
+
+.pane {
+    border-radius: 0.5em;
+    padding: 0.2em;
+    overflow-y: scroll;
+    border: solid 1px #dcdedd;
+    background: linear-gradient(to bottom, #dcdedd 0%,#ececec 2%,#ececec 100%);
+}
+
+.pane__white {
+    background: white;
+}
+
+
+/*
+ * SECTION
+ */
+
+.section__title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #4b637e;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+}
+
+.subsection__title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #4b637e;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+}
+
+
+
+/*
+ * HOME
+ */
+
+.home {
+
+}
+
+    /* CARDS PANE */
+
+    .home__pane {
+        vertical-align: top;
+        display: inline-block;
+        margin: 0.5em 0 0.5em 0.5em;
+        width: 60%;
+    }
+
+    .card.home__card {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em 0 0.5em 0.5em;
+    }
+
+    .card__heading {
+        color: white;
+        margin-top: -0.3em;
+        border-top-right-radius: 0.3em;
+        border-top-left-radius: 0.3em;
+        background-repeat: no-repeat;
+        background-position: 0.5em center;
+        background-size: 2em;
+    }
+
+
+    /* ACCOUNT PANE */
+
+    .home__account {
+        background-color: #cacfd5;
+        height: 30em;
+        width: 33%;
+        float: right;
+        padding: 1em;
+        margin-top: 0;
+        color: #3f5268;
+        position: fixed;
+        right: 0;
+    }
+
+        /* LINKS */
+
+        .home__account__as {
+            position: absolute;
+            left: 9em;
+            top: 1.4em;
+        }
+
+        .home__account__a {
+            color: #3f5268;
+            font-size: 0.8em;
+            margin-right: 0.5em;
+        }
+
+    .home__account__title {
+        font-size: 1.3em;
+        margin: 0.2em 0 0 0;
+    }
+
+    .home__account__text {
+    }
+
+    .home__account__field {
+        margin-top: 1em;
+    }
+
+    .home__account__textbox {
+        width: 95%;
+        margin-top: 0.3em;
+    }
+
+    .home__account__actions {
+        margin-top: 1em;
+    }
+
+    .home__account__actions .home__account__button:last-child {
+        float: right;
+    }
+
+    .home__account__profile {
+        height: 5em;
+    }
+
+    .home__account__pane {
+        position: relative;
+    }
+
+    .home__account__username {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0.6em;
+    }
+
+    .home__account__location {
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 100;
+    }
+
+    .home__account__photo {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        height: 5em;
+        width: 5em;
+    }
+
+        /* TABS */
+
+        .home__account__tabs {
+            width: 100%;
+            display: inline-block;
+            background-color: #e2e5e8;
+            margin: 1em -1em;
+            padding: 0.5em 1em;
+            border-top: solid 1px white;
+            border-bottom: solid 1px white;
+        }
+
+        .home__account__tab {
+            color: #3f5268;
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .home__account__tab--active span {
+            border-bottom: solid 5px #3f5268;
+            padding-bottom: 0.2em;
+            font-weight: 600;
+        }
+
+        /* FRIENDS */
+
+        .home__account__friend {
+            border-bottom: solid 1px white;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .home__account__friend:first-child {
+            padding-top: 0;
+        }
+
+        .home__account__friend:last-child {
+            border-bottom: none;
+        }
+
+        .home__account__friendphoto {
+            display: inline-block;
+            width: 3em;
+        }
+
+        .home__account__frienddetails {
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 0.5em;
+            padding-top: 0.5em;
+            width: 50%;
+        }
+
+        .home__account__friendname {
+            font-size: 1em;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .home__account__friendlocation {
+            font-size: 0.8em;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .home__account__friendviewprofile {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 0.8em;
+            float: right;
+            line-height: 4em;
+            font-weight: 500;
+            color: #3f5268;
+        }
+
+
+
+
+/*
+ * FOOTER
+ */
+
+footer {
+    height: 3.5em;
+    background-color: #3f5268;
+    width: 100%;
+    display: block;
+    clear: left;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    line-height: 3.5em;
+}
+
+.footer__a {
+    color: white;
+    margin-left: 0.5em;
+}
+
+
+/*
+ * CARD
+ */
+
+.card {
+    border-radius: 0.5em;
+    margin: 0.5em;
+    background-color: #f7f7f7;
+    border: solid 1px #e2e2e2;
+    padding: 0.3em;
+}
+
+    /* HEADING */
+
+    .card__heading {
+        border-bottom: none;
+        margin-left: -0.3em;
+        margin-right: -0.3em;
+        padding: 0 0.5em 0 3em;
+        position: relative;
+    }
+
+    .card--open .card__heading {
+        border-bottom: solid 1px #e2e2e2;
+    }
+
+    .card__addnew .card__heading {
+        background-color: gray;
+    }
+    
+    .card__addnew .card__heading:before {
+        content: '+';
+        display: inline-block;
+        position: absolute;
+        left: 0.5em;
+        top: 0em;
+        font-size: 2em;
+    }
+
+    .card__body__button {
+        width: 90%;
+        margin-top: 0.5em;
+        text-align: center;
+    }
+
+    .card__legal .card__heading {
+        background-color: #3498db;
+        background-image: url('../images/Scales_Inverted.svg');
+    }
+
+    .card__health .card__heading {
+        background-color: #e74c3c;
+        background-image: url('../images/Cross_Inverted_Red.svg');
+    }
+
+    .card__religion .card__heading {
+        background-color: #26400e;
+        background-image: url('../images/Religion.svg');
+    }
+
+    .card__toggle {
+        border: none;
+        background-color: transparent;
+        width: 0.5em;
+        height: 1.8em;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4em;
+        text-align: center;
+        line-height: 0.4em;
+        cursor: pointer;
+    }
+
+    .card__title {
+        margin: 0.5em 0;
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 400;
+        color: white;
+    }
+
+    /* ADD BUTTON */
+
+    .card__add {
+        margin: 0.1em;
+        position: absolute;
+        right: 0;
+        outline: none;
+    }
+
+    .button.button__secondary.card__add--added {
+        background: linear-gradient(to top, #898989 1%,#727272 10%,#727272 80%,#545454 100%);
+    }
+
+
+    /* BODY / INFO */
+
+    .card__body {
+        padding: 0;
+    }
+
+    .card__info {
+        padding-bottom: 0.5em;
+        border-bottom: solid 1px #e2e2e2;
+        margin-left: -0.3em;
+        margin-right: -0.3em;
+        padding: 0.8em;
+    }
+
+
+    /* CARD ITEM */
+
+    .carditem {
+        border-top: solid 1px #d9d9d9;
+        padding-top: 0.1em;
+        position: relative;
+        display: block;
+        text-decoration: none;
+    }
+
+    .carditem:first-child {
+        border-top: none;
+    }
+
+    .carditem:hover {
+        background-color: #efefef;
+    }
+
+    .carditem__logo {
+        width: 2.7em;
+        height: 2.7em;
+        display: inline-block;
+        float: left;
+        clear: left;
+        margin: 0.5em 0.5em 0.5em 0;
+    }
+
+    .carditem__body {
+        display: inline-block;
+        height: 3.6em;
+    }
+
+    .carditem__title {
+        margin: 0.3em 0 0 0;
+        font-size: 0.9em;
+        color: #444444;
+        display: inline-block;
+        width: 100%;
+        text-decoration: underline;
+    }
+
+    .carditem__location {
+        font-size: 0.7em;
+        color: gray;
+        display: inline-block;
+        position: absolute;
+        bottom: 2.3em;
+    }
+
+    .carditem__distance {
+        position: absolute;
+        top: 0.3em;
+        right: 0.1em;
+        font-size: 0.8em;
+    }
+
+    .carditem__comments {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.1em;
+        font-size: 0.8em;
+    }
+
+    .carditem__starrating {
+        position: absolute;
+        bottom: 0.3em;
+        left: 3em;
+    }
+
+
+/*
+ * STAR RATING
+ */
+
+.starrating__star {
+    background: url('../images/rcStarRating__Star--Outline.svg') no-repeat center center;
+    text-indent: -10000em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    opacity: 0.3;
+}
+
+.starrating__star--filled {
+    background-image: url('../images/rcStarRating__Star.svg');
+}
+
+.starrating__input .starrating__star {
+    background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    opacity: 1;
+    cursor: pointer;
+}
+
+.starrating__input .starrating__star--filled {
+    background-image: url('../images/rcStarRating__GreenStar.svg');
+}
+
+    /* HOVER STATE */
+
+    .starrating__input:hover .starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar.svg');
+    }
+
+    .starrating__input:hover .starrating__star:hover~.starrating__star {
+        background-image: url('../images/rcStarRating__GreenStar--Outline.svg');
+    }
+
+
+/*
+ * DISTANCE
+ */
+
+.carditem .distance {
+    color: #00b1ea;
+    font-weight: bold;
+    background: url('../images/LocationMarker.svg') no-repeat left center;
+    padding-left: 1.2em;
+}
+
+
+/*
+ * PROGRESS
+ */
+
+
+.progress {
+    list-style: none none;
+    margin: 1em;
+    padding: 0;
+    position: relative;
+}
+
+.progress__step {
+    display: inline-block;
+    color: #3f5268;
+    background: linear-gradient(to bottom, #b5bcc5 0%,#dee2e5 100%);
+    height: 1.8em;
+    line-height: 1.8em;
+    position: relative;
+    padding: 0 0.5em 0 0.5em;
+}
+
+.progress__step--active {
+    background: linear-gradient(to bottom, #4b637e 0%,#3f5369 100%);
+    color: white;
+}
+
+.progress__step:after {
+    display: inline-block;
+    content: ' ';
+    height: 1.8em;
+    width: 1.8em;
+    background-image: url('../images/Arrow-Light.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    right: -1.8em;
+    top: 0;
+}
+
+.progress__step--active:after {
+    background-image: url('../images/Arrow-Dark.svg');
+}
+
+.progress__step:nth-child(1) {
+    z-index: 3;
+}
+
+.progress__step:nth-child(2) {
+    z-index: 2;
+}
+
+.progress__step:nth-child(n+2) {
+    padding-left: 4em;
+    margin-left: -2em;
+}
+
+
+
+/* 
+ * CREATE ACCOUNT
+ */
+
+    /* FIND INTERESTS */
+
+    .createaccount__interests {
+        margin: 0 0 0 1em;
+        width: 60%;
+        display: inline-block;
+    }
+
+    .createaccount__interests__filter {
+        width: 100%;
+    }
+
+    .createaccount__interests__pane {
+        height: 19.8em;
+        width: 101.5%;
+        margin-top: 0.5em;
+    }
+
+    /* CHOOSE YOUR SORTING */
+
+    .createaccount__sorting {
+        margin: 0 0 0 3em;
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .createaccount__sorting__toggle {
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .createaccount__sorting__toggle input {
+        margin-right: 1em;
+    }
+
+    /* DONE */
+
+    .createaccount__done {
+        position: absolute;
+        right: 1.6em;
+        bottom: 4.5em;
+        width: 30%;
+    }
+
+
+/*
+ * BREADCRUMBS
+ */
+
+.breadcrumbs {
+    margin: 0.5em 1em;
+}
+
+.breadcrumb {
+    text-decoration: none;
+    color: #3f5268;
+    font-size: 0.8em;
+}
+
+.breadcrumb:hover span {
+    text-decoration: underline;
+}
+
+
+/*
+ * RESOURCE PROFILE
+ */
+
+.profile {
+    margin: 1em;
+    position: relative;
+}
+
+.profile__heading .profile__title {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #4b637e;
+    font-weight: 500;
+    margin: 0 0 0.5em 0;
+    padding-top: 0.1em;
+}
+
+.profile__heading .profile__title .profile__title__segment {
+    font-weight: 100;
+}
+
+.profile header {
+    background-color: #ec4c4c;
+}
+
+.profile__logo {
+    display: inline-block;
+    margin-right: 0.5em;
+    border: solid 1px #4b637e;
+    height: 2em;
+}
+
+    /* SUMMARY */
+
+    .profile__summary {
+        width: 65%;
+        display: inline-block;
+    }
+
+    .profile__summary p {
+        color: #4b637e;
+        font-size: 0.9em;
+    }
+
+
+    /* CONTACT */
+
+    .profile__contact {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        position: relative;
+    }
+
+    .profile__contact,
+    .profile__contact * {
+        color: #4b637e;
+    }
+
+    .profile__contactdetail {
+        background-repeat: no-repeat;
+        background-position: left 0.3em;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+        border-top: solid 1px solid 1px #d9d9d9;
+    }
+    
+    .profile__contactdetail:first-child {
+        border-top: none;
+    }
+
+    .profile__contactdetailphone {
+        background-image: url('../images/Telephone.svg');
+        background-size: 2em;
+    }
+
+    .profile__contactdetailaddress {
+        background-image: url('../images/Mail.svg');
+        background-size: 2em;
+    }
+
+    .profile__contactdetail__label {
+        display: inline-block;
+        margin-left: 2.8em;
+        width: 100%;
+    }
+
+    .profile__contactdetail__value {
+        display: inline-block;
+        margin-left: 2.8em;
+        width: 90%;
+    }
+
+
+
+    /* RATINGS */
+
+    .profile__ratings {
+        width: 65%;
+    }
+
+    .profile__rating {
+        width: 49%;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .profile__rating__title {
+        margin: 0 0 0.5em 0;
+        color: #4b637e;
+        font-weight: 200;
+    }
+
+    .profile__starrating__star {
+        height: 1.4em;
+        width: 1.4em;
+    }
+
+
+    /* LOCATION */
+
+    .profile__location {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 12.8em;
+    }
+
+    .profile__location p {
+        color: #4b637e;
+        font-size: 0.8em;
+    }
+
+    .profile__location__map {
+        background: url('../images/Map.png') no-repeat center center;
+        width: 100%;
+        height: 6em;
+    }
+
+
+    /* COMMENTS */
+
+    .profile__comments {
+        width: 65%;
+        color: #4b637e;
+    }
+
+    .profile__comments__list {
+        overflow-y: scroll;
+        list-style: none none;
+        padding: 0;
+    }
+
+    .profile__comment__photo,
+    .profile__comment__details,
+    .profile__comment__content,
+    .profile__comment__liking {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .profile__comment__photo {
+        width: 10%;
+    }
+
+    .profile__comment__details {
+        width: 15%;
+        overflow: hidden;
+        color: #0098cb;
+    }
+
+    .profile__comment__date {
+        font-size: 0.6em;
+    }
+
+    .profile__comment__content {
+        width: 50%;
+        font-size: 0.9em;
+    }
+
+    .profile__comment__person {
+        margin: 0 0 0.3em 0;
+        font-size: 0.8em;
+    }
+
+    .profile__comment:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
+
+    .profile__comment__badge {
+        height: 1em;
+        width: 1em;
+    }
+
+    .profile__comment__liking {
+        border-left: solid 1px #e8e8e8;
+        width: 20%;
+        padding-left: 0.5em;
+    }
+
+    .profile__comment__like {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 2.3em;
+        background-color: white;
+        width: 100%;
+        border: none;
+        height: 3.3em;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        cursor: pointer;
+        margin: 0;
+        border-bottom: solid 1px #e8e8e8;
+        padding: 0;
+        padding-top: 2em;
+    }
+    
+    .profile__comment__like {
+        background-image: url('../images/HeartRed_Gray.svg');
+        color: grey;
+    }
+
+    .profile__comment__like--liked .profile__comment__like {
+        background-image: url('../images/HeartRed.svg');
+        color: #ec4c4c;
+    }    
+
+    .profile__comment__likes {
+        font-size: 0.7em;
+        text-align: center;
+        width: 100%;
+        float: left;
+        display: inline-block;
+    }
+
+    .profile__comment__like--liked .profile__comment__likes {
+        color: gray;
+    }
+
+    /* ADD COMMENT */
+
+    .profile__addcomment__input,
+    .profile__addcomment__button {
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .profile__addcomment__input {
+        width: 83%;
+        height: 2.7em;
+        display: inline-block;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+        font-weight: 200;
+    }
+
+    .profile__addcomment__button {
+        float: right;
+    }
+
+
+/*
+ * BADGE
+ */
+
+
+
+/*
+ * BUTTON
+ */
+
+.button {
+    background-color: #467a60;
+    color: white;
+    height: 2em;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 0.3em;
+    border: solid 1px #335a47;
+    background: linear-gradient(to bottom, #67b08c 1%,#467a60 10%,#467a60 80%,#37624d 100%);
+    padding: 0 0.5em;
+}
+
+a.button {
+    line-height: 2em;
+}
+
+.button:active {
+    background: linear-gradient(to top, #467a60 1%,#37624d 10%,#37624d 80%,#37624d 100%);
+    outline: none;
+}
+
+.button__secondary {
+    border: solid 1px #545454;
+    background: linear-gradient(to bottom, #9d9c9c 1%,#898989 10%,#727272 80%,#545454 100%);
+}
+
+.button.button__secondary:active {
+    background: linear-gradient(to top, #898989 1%,#727272 10%,#727272 80%,#545454 100%);
+    outline: none;
+}
+
+
+/*
+ * TEXTAREA
+ */
+
+textarea {
+    border: solid 1px #d9d9d9;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    padding: 0.5em;
+    font-family: "Helvetica Neue";
+}
+
+
+/*
+ * TEXTBOX
+ */
+
+.textbox {
+    border: solid 1px #d9d9d9;
+    border-radius: 0.5em;
+    font-size: 0.9em;
+    padding: 0.5em;
+    font-weight: 100;
+    font-family: "Helvetica Neue";
+}
+
+
+
+/*
+ * USERPROFILE
+ */
+
+.userprofile {
+    margin: 1em;
+}
+
+.userprofile__pane {
+    padding: 0.5em;
+    margin: 0 0.5em 0.5em 0;
+}
+
+.userprofile__header {
+}
+
+.userprofile__left,
+.userprofile__right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.userprofile__left {
+    width: 59%;
+}
+
+.userprofile__right {
+    width: 30%;
+}
+
+.userprofile__photo {
+    height: 10em;
+    text-align: center;
+}
+
+.userprofile__photo__pic {
+    height: 100%;
+    margin-bottom: 0.8em;
+}
+
+.userprofile__changephoto {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.userprofile__name {
+    margin: 0.5em 0 0.2em 0;
+    font-weight: normal;
+}
+
+.userprofile__location {
+    font-weight: 100;
+}
+
+.userprofile__friends {
+    margin-top: 3em;
+
+}
+
+    /* STATS */
+
+    .userprofile__stats {
+        background-color: #7995b8;
+    }
+
+    .userprofile__stat {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        width: 48%;
+    }
+
+    .userprofile__stat:first-child {
+        background-color: #8ea1b9;
+        border-right: solid 1px white;
+        height: 4.5em;
+        padding-top: 0.4em;
+    }
+
+    .userprofile__stat__number {
+        font-weight: 300;
+        font-size: 2em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .userprofile__stat__label {
+        font-weight: 100;
+    }
+
+    .userprofile__stat,
+    .userprofile__stat * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* BADGES */
+
+    .userprofile__badges {
+
+    }
+
+    .userprofile__badge {
+        padding-bottom: 0.5em;
+    }
+
+    .userprofile__badge:not(:last-child) {
+        margin-bottom: 0.5em;
+        border-bottom: solid 1px #d9d9d9;
+    }
+
+    .userprofile__badges__list {
+        list-style: none none;
+        padding: 0;
+        margin: 0.5em;
+    }
+
+    .userprofile__badge__image,
+    .userprofile__badge__details {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    .userprofile__badge__image {
+        width: 20%;
+        height: 4em;
+    }
+
+    .userprofile__badge__details {
+        margin-left: 0.5em;
+        width: 70%;
+    }
+
+    .userprofile__badge__title {
+        padding: 0;
+        margin: 0 0 0.5em 0;
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+
+    .userprofile__badge__description {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ADD FRIEND */
+
+    .userprofile__addfriend {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .userprofile__addfriend__message {
+        width: 88%;
+        height: 5em;
+    }
+
+    .userprofile__addfriend__button {
+        margin-top: 0.5em;
+        width: 95%;
+    }
+
+    /* FRIENDS */
+
+    .userprofile__friend {
+        border-bottom: solid 1px white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .userprofile__friend:first-child {
+        padding-top: 0;
+    }
+
+    .userprofile__friend:last-child {
+        border-bottom: none;
+    }
+
+    .userprofile__friendphoto {
+        display: inline-block;
+        width: 3em;
+    }
+
+    .userprofile__frienddetails {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 0.5em;
+        padding-top: 0.5em;
+        width: 50%;
+    }
+
+    .userprofile__friendname {
+        font-size: 1em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .userprofile__friendlocation {
+        font-size: 0.8em;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .userprofile__friendviewprofile {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0.8em;
+        float: right;
+        line-height: 4em;
+        font-weight: 500;
+        color: #3f5268;
+    }
+
+
+
+
+
+/*
+ * NEAR ME
+ */
+
+.nearme {
+    padding: 1em;
+}
+
+    /* FILTER */
+
+    .nearme__postcode {
+        width: 70%;
+        margin-left: 0.5em;
+    }
+
+    .nearme__search {
+        float: right;
+        height: 1.8em;
+        margin-top: -0.1em;
+    }
+
+    .nearme__search span {
+        color: white;
+    }
+
+    /* RESULTS */
+
+    .nearme__results {
+        width: 100%;
+        display: inline-block;
+        margin-top: 1em;
+    }
+
+    .nearme__results.pane {
+        overflow: hidden;
+    }
+
+        /* LIST */
+
+        .nearme__list {
+            width: 28%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .nearme__list.card {
+            margin: 0;
+        }
+
+
+        /* MAP */
+
+        .nearme__map {
+            width: 69%;
+            float: right;
+            background-image: url('../images/Map.png');
+            background-repeat: no-repeat;
+            height: 20em;
+            background-size: 100%;
+            margin-bottom: 0.5em;
+            display: inline-block;
+            border-radius: 0.3em;
+        }
+
+.nearme__heading {
+    background-color: #e74c3c;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    position: relative;
+}
+
+.nearme__card {
+    padding-top: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.nearme__card__title {
+    font-size: 0.8em;
+    color: white;
+    padding-top: 0.1em;
+}
+
+.nearme__card__title label {
+    font-weight: 200;
+}
+
+.nearme__getlocation {
+    background: url('../images/FindLocation.svg') no-repeat center center;
+    border: none;
+    text-indent: -10000em;
+    width: 2.2em;
+    height: 2.2em;
+    right: 0.5em;
+    top: 0.2em;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+/*
+ * NOTBUILT
+ */
+
+.notbuilt.notbuilt.notbuilt.notbuilt,
+.notbuilt.notbuilt.notbuilt.notbuilt * {
+    cursor: wait;
+}
+

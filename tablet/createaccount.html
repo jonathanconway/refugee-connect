@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Refugee Connect - Home</title>
+        <meta name="description" content="An application that connects refugees to vital institutions, services and people.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../lib/toastr.min.css" rel="stylesheet" type="text/css">
+        <link href="app.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="app" ng-controller="AppController as app" class="app">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="sidebar">
+            <h1 class="sidebar__title"><a class="sidebar__title__link" href="index.html">Refugee Connect</a></h1>
+
+            <img src="../images/Logo_v7_Inverted.svg" class="sidebar__logo" alt="Refugee Connect Logo" />
+
+            <span class="sidebar__account">
+                <img src="../images/ProfilePicTablet.png" alt="Photo of Sally Allam" />
+                <span class="sidebar__account__messages notbuilt">2</span>
+            </span>
+
+            <div class="sidebar__location">
+                <span class="sidebar__location__name">Sydney, AU</span>
+            </div>
+
+            <ul class="sidebar__links">
+                <li><a class="sidebar__link" href="personal.html">Personal Profile</a></li>
+                <li><a class="sidebar__link notbuilt" href="favourites.html">Favourites</a></li>
+                <li><a class="sidebar__link notbuilt" href="friends.html">Friends</a></li>
+                <li><a class="sidebar__link" href="follows.html">Follows</a></li>
+                <li><a class="sidebar__link notbuilt" href="recommendations.html">Recommends</a></li>
+                <li><a class="sidebar__link" href="comments.html">Comments</a></li>
+            </ul>
+
+            <form class="sidebar__search notbuilt">
+                <input type="text" class="sidebar__search__input" placeholder="Enter an interest">
+                <button>Add Interest</button>
+            </form>
+        </div>
+
+        <div class="body">
+            <div class="search notbuilt">
+                 <label class="search__label a11y-context">Search</label>
+                 <input type="text" class="search__input textbox">
+                 <button class="button search__button"><span style="display:inline-block;transform: rotate(-45deg);font-size:1.2em;color:white;">⚲</span> Search</button>
+            </div>
+
+            <h2 class="body__title">Create Account</h2>
+
+            <div class="createaccount">
+                <h3 class="createaccount__title">
+                    <span class="createaccount__title__text">Personal information</span>
+                    <span class="createaccount__required">Required</span>
+                </h3>
+
+                <div>
+                    <div class="createaccount__left">
+                        <div class="createaccount__field">
+                            <label class="createaccount__label">Email:</label>
+                            <input type="email" class="textbox" />
+
+                            <span class="private"><input type="checkbox" /> Keep this private</span>
+                        </div>
+
+                        <div class="createaccount__field">
+                            <label class="createaccount__label">First Name:</label>
+                            <input type="email" class="textbox" />
+
+                            <span class="private"><input type="checkbox" /> Keep this private</span>
+                        </div>
+
+                        <div class="createaccount__field">
+                            <label class="createaccount__label">Last Name:</label>
+                            <input type="email" class="textbox" />
+
+                            <span class="private"><input type="checkbox" /> Keep this private</span>
+                        </div>
+
+                        <div class="createaccount__field">
+                            <label class="createaccount__label">Date of Birth:</label>
+                            <input type="email" class="textbox" />
+
+                            <span class="private"><input type="checkbox" /> Keep this private</span>
+                        </div>
+
+                        <div class="createaccount__field">
+                            <label class="createaccount__label">Gender:</label>
+                            <label ng-class="{'button--active':createAccount.gender === 'female'}" class="button button__secondary createaccount__radiobutton" for="CreateAccountFemale">
+                                F
+                                <input type="radio" id="CreateAccountFemale" ng-model="createAccount.gender" value="female">
+                            </label>
+                            <label ng-class="{'button--active':createAccount.gender === 'male'}" class="button button__secondary createaccount__radiobutton" for="CreateAccountMale">
+                                M
+                                <input type="radio" id="CreateAccountMale" ng-model="createAccount.gender" value="male">
+                            </label>
+                            <label class="createaccount__genderother" for="CreateAccountOther">
+                                <span>Other:</span>
+                                <input type="text" class="createaccount__gendertextbox textbox" ng-focus="createAccount.gender='other'">
+                                <input type="radio" id="CreateAccounOther" ng-model="createAccount.gender" value="other">
+                            </label>
+                            <span class="private"><input type="checkbox" /> Keep this private</span>
+                        </div>
+                    </div>
+                    <div class="createaccount__right pane notbuilt">
+                        <img class="createaccount__photo" src="../images/User.svg" alt="Placeholder for your profile photo" />
+                        <button class="button button__secondary createaccount__right__button">Upload a photo</button>
+                        <button class="button button__secondary createaccount__right__button">Take a photo</button>
+                    </div>
+                </div>
+
+                <h3 class="createaccount__title">
+                    <span class="createaccount__title__text">Password</span>
+                    <span class="createaccount__required">Required</span>
+                </h3>
+
+                <div class="createaccount__field">
+                    <label>Password:</label>
+                    <input type="password" class="textbox" />
+                </div>
+
+                <div class="createaccount__field">
+                    <label>Confirm Password:</label>
+                    <input type="password" class="textbox" />
+                </div>
+
+                <h3 class="createaccount__title notbuilt">
+                    <span class="createaccount__title__text">Interest</span>
+                    <span class="createaccount__required">Skip</span>
+                </h3>
+
+            </div>
+        </div>
+
+        <script src="../lib/jquery-1.12.4.min.js"></script>
+        <script src="../lib/angular.min.js"></script>
+        <script src="../lib/lodash.min.js"></script>
+        <script src="../lib/toastr.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
